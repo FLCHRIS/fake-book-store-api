@@ -23,8 +23,14 @@ const bookSchema = Schema({
     required: true
   },
   category: {
-    type: String,
-    required: true
+    id: {
+      type: String,
+      required: true
+    },
+    name: {
+      type: String,
+      required: true
+    }
   }
 }, {
   versionKey: false
