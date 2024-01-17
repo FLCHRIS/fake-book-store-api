@@ -10,8 +10,8 @@ router.get('/', bookController.getBooks)
 
 router.get('/:id', bookController.getBook)
 
-router.put('/:id', bookController.updateBook)
+router.put('/:id', validateToken, bookController.updateBook)
 
-router.delete('/:id', bookController.deleteBook)
+router.delete('/:id', validateToken, bookController.deleteBook)
 
 export default router
