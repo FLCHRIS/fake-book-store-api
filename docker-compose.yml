@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+
+  mongo:
+    image: mongo:latest
+    restart: "no"
+    container_name: fakebookstoredb
+    hostname: host-mongo
+    volumes:
+      - ./data:/data/db
+      - ./data/log:/var/log/mongodb/
+    ports:
+      - "27017:27017"
