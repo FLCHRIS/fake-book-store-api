@@ -60,6 +60,10 @@ export const updateBook = async (req, res) => {
   }
 
   const updatedBook = {
+    category: {
+      id: book.category.id,
+      name: book.category.name
+    },
     _id: id,
     name: book.name,
     description: book.description,
@@ -69,8 +73,7 @@ export const updateBook = async (req, res) => {
     dimensions: book.dimensions,
     image: book.image,
     price: book.price,
-    author: book.author,
-    category: book.category
+    author: book.author
   }
 
   return res.json(updatedBook)
