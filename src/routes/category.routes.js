@@ -1,9 +1,11 @@
 import { Router } from 'express'
+import { validateToken } from '../middlewares/validateToken'
+import * as categoryController from '../controllers/category.controller'
 
 const router = Router()
 
-router.get('/', async (req, res) => {
-  res.send('a')
-})
+router.post('/', validateToken, categoryController.createCategory)
+router.get('/', categoryController.getCategories)
+router.get('/:id/books', categoryController.getBooksCategories)
 
 export default router
