@@ -35,6 +35,9 @@ export const getUser = async (req, res) => {
 
   try {
     const user = await User.findById(id)
+
+    if (!user) return res.status(404).json({ error: 'Get user failed.', message: 'User not found.' })
+
     return res.json(user)
   } catch (error) {
     return res.status(500).json({ error: 'Internal Server Error.', message: 'There was an error getting the user.' })
