@@ -2,22 +2,6 @@ import mongoose from 'mongoose'
 import Category from '../models/Category'
 import Book from '../models/Book'
 
-export const createCategory = async (req, res) => {
-  const category = req.body
-
-  if (Object.keys(category).length === 0) {
-    return res.status(400).json({ error: 'Save failed.', message: 'Please submit a category.' })
-  }
-
-  try {
-    const newCategory = new Category(category)
-    await Category.validate(newCategory)
-    return res.status(201).json(newCategory)
-  } catch (error) {
-    return res.status(400).json({ error: 'Save failed', message: 'Invalid user data. Please check the submitted category.' })
-  }
-}
-
 export const getCategories = async (req, res) => {
   try {
     const categories = await Category.find()
