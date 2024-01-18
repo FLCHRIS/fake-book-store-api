@@ -26,7 +26,7 @@ The tools used to develop this service were...
 
 In order to run the application you must have [**MongoDB :seedling:**](https://www.mongodb.com/) installed or you can use [**Docker :whale2:**](https://www.docker.com/products/docker-desktop/). The configuration to be able to lift a container is as follows:
 
-1. Builds Docker images based on the configuration in docker-compose.yml.
+1. Builds Docker images based on the configuration in docker-compose.yml (A folder `data` will be created that will mount a volume so that the information is not lost when you stop the container).
 
     ```sh
     $ docker-compose build
@@ -37,6 +37,8 @@ In order to run the application you must have [**MongoDB :seedling:**](https://w
     ```sh
     $ docker-compose up
     ```
+
+
 
 ### API
 
