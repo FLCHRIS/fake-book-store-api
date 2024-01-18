@@ -42,11 +42,11 @@ In order to run the application you must have [**MongoDB :seedling:**](https://w
 
 Download and configure the necessary dependencies for the application and run the application.
 
-    ```sh
-    $ npm install
+```sh
+$ npm install
     
-    $ npm run dev
-    ```
+$ npm run dev
+```
 
 Build the project
 
