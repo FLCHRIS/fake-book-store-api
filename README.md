@@ -1,5 +1,7 @@
 # Fake Book Store API :books:
 
+![**Mockup**](./public/mockup/mockup.png)
+
 Fake Books API is a free online REST API that you can use whenever you need pseudo-real data for your library application, whether for development, testing, or educational purposes. This API provides dummy information about books, authors, and categories with authentication. :closed_book:
 
 ## Development tools used :gear:
