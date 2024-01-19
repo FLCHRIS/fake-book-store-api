@@ -9,9 +9,8 @@ export const createBook = async (req, res) => {
 
   try {
     const newBook = new Book(book)
-    // await Book.validate(newUser)
-    const bookSaved = await newBook.save()
-    return res.status(201).json(bookSaved)
+    await Book.validate(newBook)
+    return res.status(201).json(newBook)
   } catch (error) {
     return res.status(400).json({ error: 'Save failed', message: 'Invalid book data. Please check the submitted book.' })
   }
