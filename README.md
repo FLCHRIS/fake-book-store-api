@@ -325,6 +325,6 @@ You can access them through the following url: `http://localhost:3000/images/A3s
 ## Some of my platforms... :innocent:
 
 - [GitHub](https://github.com/FLCHRIS) :black_heart:
-- [Website](https://christianfl.netlify.app/) :face_in_clouds:
+- [Website](https://fkhris-ts.netlify.app/) :face_in_clouds:
 
 **HAPPY CODING!!** :upside_down_face: :v:
