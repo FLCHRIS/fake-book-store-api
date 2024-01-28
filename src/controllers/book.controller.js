@@ -17,10 +17,10 @@ export const createBook = async (req, res) => {
 }
 
 export const getBooks = async (req, res) => {
-  const { limit } = req.query || { limit: 0 }
+  const { limit, offset } = req.query || { limit: 0, offset: 0 }
 
   try {
-    const books = await Book.find().limit(limit)
+    const books = await Book.find().skip(offset).limit(limit)
 
     return res.json(books)
   } catch (error) {
