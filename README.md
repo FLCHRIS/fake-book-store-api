@@ -18,7 +18,6 @@ The tools used to develop this service were...
 ![**EXPRESS-JS**](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![**NODE-JS**](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![**JWT**](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
-![**NETLIFY**](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 </div>
 
@@ -28,7 +27,7 @@ The Fake Book Store API offers a complete set of modules covering the main entit
 
 These modules include:
 
-- **Users:** https://fake-book-store-api.onrender.com/api/users
+- **Users:** :bust_in_silhouette: https://fake-book-store-api.onrender.com/api/users
 - **Books:** :green_book: https://fake-book-store-api.onrender.com/api/books
 - **Categories:** :jigsaw: https://fake-book-store-api.onrender.com/api/categories
 - **Auth:** :key: https://fake-book-store-api.onrender.com/api/auth/login
